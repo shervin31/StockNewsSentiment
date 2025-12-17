@@ -18,7 +18,7 @@ cd StockNewsSentiment
 
 ## Install Dependencies
 ```bash
-pip install transformers requests pandas
+pip install transformers requests pandas datetime 
 ```
 
 ## Get a NewsAPI key:
@@ -28,3 +28,24 @@ Open functions.py and replace the API_KEY:
 ```bash
 API_KEY = "your_actual_api_key_here"  # Replace this string
 ```
+## Usage
+Run the main script:
+```bash
+python main.py
+```
+
+## Example interaction: 
+```bash
+Enter a stock/company to search news for: Apple
+Enter number of days to look back: 7
+Average sentiment score: 0.68
+```
+
+## Output
+  DataFrame with columns: Title, Link, Published, Label, Sentiment
+  Average sentiment score (-1 to 1 scale)
+
+## Dependencies
+  transformers - For FinBERT NLP model pipeline
+  requests - For API calls to NewsAPI
+  pandas - For data manipulation
