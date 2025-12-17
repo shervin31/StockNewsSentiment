@@ -10,10 +10,21 @@ A Python tool that analyzes news sentiment for stocks using NLP and real-time ne
 
 ## Installation
 
-### 1. Clone the repository:
+### Clone the repository:
 ```bash
 git clone https://github.com/yourusername/StockNewsSentiment.git
 cd StockNewsSentiment
 ```
 
 ## Install Dependencies
+```bash
+pip install transformers requests pandas
+```
+
+## Get a NewsAPI key:
+Go to newsapi.org and sign up for a free account
+Get your API key from the dashboard
+Open functions.py and replace the API_KEY:
+```bash
+API_KEY = "your_actual_api_key_here"  # Replace this string
+```
