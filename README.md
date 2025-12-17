@@ -49,3 +49,24 @@ Average sentiment score: 0.68
   transformers - For FinBERT NLP model pipeline
   requests - For API calls to NewsAPI
   pandas - For data manipulation
+
+## Project Structure
+```bash
+StockNewsSentiment/
+├── functions.py
+├── main.py
+└── README.md
+```
+
+## How It Works
+  Fetches news from NewsAPI
+  Processes text with FinBERT model
+  Calculates aggregate sentiment scores
+
+## Requirements
+  Python 3.7+
+  NewsAPI key
+  Internet connection
+
+## Disclaimer
+  For informational purposes only. Not financial advice.
