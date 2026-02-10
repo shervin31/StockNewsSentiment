@@ -3,11 +3,6 @@ from datetime import datetime, timedelta, timezone
 import pandas as pd
 import yfinance as yf
 
-def _parse_pubdate(pubdate_str: str):
-    try:
-        return datetime.strptime(pubdate_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-    except Exception:
-        return None
 
 def fetch_news_articles(ticker, days_back):
     pipe = pipeline("text-classification", model="ProsusAI/finbert")
